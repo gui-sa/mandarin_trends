@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> Manda_Trends </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Guilherme Salomao Agostni">
+    <meta name="Description" content="Shopping Trends">
+    <meta name="keywords" content="Trends, Shopping, Mandarin">
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        const readingTime = 5000; //ms
+        window.addEventListener("load", ()=>{
+            setTimeout(()=>{
+                const popup = document.querySelector(".notificacao_container");
+                popup.style.display = "flex";
+                }, readingTime);
+        });
+    </script>
+</head> 
+
+<body>
+    <div class="container">
+        <div class="container_main">
+            <header>
+                <img id="logo" src="./assets/header/logo.png" alt="Manda Trends Logo">
+                <div>
+                    <img id="escamas" src="./assets/header/escamas.png" alt="Escamas">
+                    <img id="setas" src="./assets/header/Setas.png" alt="Setas">
+                    <img id="bolinhas" src="./assets/header/bolinhas.png" alt="Bolinhas">
+                    <img id="mulher" src="./assets/header/mulher.png" alt="Mulher Divulgando">
+                    <div id="text_header">
+                        <img id="triangulo" src="./assets/header/triangle.png" alt="Triangulo">
+                        <h2>NRF2020,<br> Kobe Bryant e<br> WhatsApp Payment</h2>
+                        <p id="edicao">edição 06</p>
+                        <img src="./assets/header/zigzag.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <main>
+                <article id="container_noticia">
+                    <section id="secao_principal">
+                        <img id="noticia_foto" src="./assets/main/noticia1.png" alt="NRF 2020 Retail Big Show">
+                        <h1 id="titulo_principal">NRF 2020: conheça os top 5 assuntos do evento.</h1>
+                        <p class="descricao_assunto">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.                    </p>
+                        <p class="fonte_assunto">Fonte: CMO ADOBE</p>
+                        <div class="linha_decorativa_noticia1"></div>
+                    </section>
+                    <div class="container_sections">
+                        <section class="section_secundarias">
+                            <img class="foto_section_secundaria" src="./assets/main/noticia4.png" alt="Make Kobe NBA Logo">
+                            <h2 class="titulo_sec">Petição para colocar Kobe Bryant no logo da NBA.</h2>
+                            <p class="fonte_assunto">Fonte: Daily Mail</p>
+                            <div class="linha_decorativa_noticia2"></div>
+
+                        </section>
+                        <section class="section_secundarias">
+                            <img class="foto_section_secundaria" src="./assets/main/noticia5.png" alt="WhatsApp Logo">
+                            <h2 class="titulo_sec">WhatsApp terá função de pagamentos em 2020.</h2>
+                            <p class="fonte_assunto">Fonte: Proxxima</p>
+                            <div class="linha_decorativa_noticia3"></div>
+                        </section>
+                    </div>
+                </article>
+            </main>
+            <div class="footer_logo">
+                <img id="logo_assinatura" src="./assets/footer/logo_assinatura.svg" alt="Assinatura Mandarin">
+            </div>
+        </div>
+        <footer>
+            <p>Copyright ® Mandarin. Todos os direitos reservados.<br>
+                Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui</a>.</p>
+        </footer>
+        <div class="notificacao_container">
+            <p class="notificacao_text">Deseja receber mais e-mails como este? <a href="#">Clique aqui e cadastre-se.</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
